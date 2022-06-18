@@ -6,19 +6,23 @@ import { Landing3 } from "./Components/Landing3";
 import { Landing4 } from "./Components/Landing4";
 import { Landing5 } from "./Components/Landing5";
 import { Navbar } from "./Components/Navbar";
+import { Service } from "./Components/Services/Service";
+import { Doctor } from "./Components/Doctors/Doctor";
+import { Pharmacy } from "./Components/Pharmacy/Pharmacy";
+import { Diagnosis } from "./Components/Diagnosis/Diagnosis";
 import {
   BrowserRouter,
   Routes,
   Route,
 } from "react-router-dom";
-import { Service } from "./Components/Services/Service";
+import { DoctorCard } from "./Components/Doctors/DoctorCard";
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<div className="">
+        <Route path="/" element={<div className="space-y-2">
           <Hero />
           <Landing1 />
           <Landing2 />
@@ -28,6 +32,10 @@ function App() {
         </div>}>
         </Route>
         <Route exact path="/services" element={<Service />} />
+        <Route exact path="/doctor" element={<Doctor />} />
+        <Route exact path="/doctorsingle" element={<DoctorCard />} />
+        <Route exact path="/pharmacy" element={<Pharmacy />} />
+        <Route exact path="/diagnosis" element={<Diagnosis />} />
       </Routes>
       <Footer />
     </BrowserRouter>
