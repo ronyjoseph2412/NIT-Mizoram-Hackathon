@@ -19,7 +19,7 @@ export const Hero = () => {
                 </div>
                 <div className='col-span-1'>
                     <div className='pr-10'>
-                        <img src="./assets/lady.svg" alt="" className='h-[550px] w-[320px] relative z-10 scale-150' />
+                        <img src="./assets/lady.svg" alt="" className='h-[570px] w-[320px] relative z-10 scale-150' />
                     </div>
                     <div className='absolute z-0 top-[40%] -right-[10%]'>
                         <img src="./assets/circle.svg" alt="" className='scale-95' />
