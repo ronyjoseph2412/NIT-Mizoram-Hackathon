@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.special-shadow{
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+}
+body{
+      overflow-x: hidden !important;
+}
