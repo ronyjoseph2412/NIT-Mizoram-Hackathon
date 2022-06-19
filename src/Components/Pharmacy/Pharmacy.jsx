@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import { DrugCard } from './DrugCard'
 import { PharmacyCard } from './PharmacyCard'
 
-export const Pharmacy = () => {
+export const Pharmacy = (props) => {
+    
+    const { pathname } = useLocation();
+  useEffect(() => {
+    props.path(pathname)
+  }, [])
     const pharmacies = [
         {
             name:"Sita Pharmacy",

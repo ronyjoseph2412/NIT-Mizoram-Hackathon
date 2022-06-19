@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom';
 
-export const Hero = () => {
+export const Hero = (props) => {
+
+    const { pathname } = useLocation();
+  useEffect(() => {
+    props.path(pathname)
+  }, [])
     return (
         <div className='pt-20 overflow-hidden'>
             <div className='grid grid-cols-3'>
@@ -33,9 +39,9 @@ export const Hero = () => {
                                 <div className='text-lg'>Dr.Shimanta</div>
                                 <div>Skin Specialist</div>
                             </div>
-                            <div className='bg-[#00A651] px-2 py-1 text-md cursor-pointer text-white rounded-lg'>
+                            <Link to='/doctor' className='bg-[#00A651] px-2 py-1 text-md cursor-pointer text-white rounded-lg'>
                     Make Schedule
-                    </div>
+                    </Link>
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { ServiceCard } from './ServiceCard'
 // Login Must
 export const Hero = () => {
+  
     const service =[
         {
             "img":"service1",

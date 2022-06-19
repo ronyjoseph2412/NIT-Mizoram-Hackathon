@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useLocation } from 'react-router-dom';
 import { DoctorLandingCard } from './DoctorLandingCard'
 
-export const Doctor = () => {
+export const Doctor = (props) => {
+    const { pathname } = useLocation();
+  useEffect(() => {
+    props.path(pathname)
+  }, [])
+  
     return (
         <div className=''>
             <div className='grid grid-cols-2 place-content-center place-items-center'>

@@ -16,14 +16,51 @@ import {
   Route,
 } from "react-router-dom";
 import { DoctorCard } from "./Components/Doctors/DoctorCard";
+import { useEffect, useState } from "react";
+import { Loader } from "./Components/Loader";
+import { Login } from "./Components/Auth/Login";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+  const [value, setvalue] = useState(10);
+  
+  useEffect(() => {
+    setTimeout(() => {
+      setvalue(40);
+    }, 300);
+    setTimeout(() => {
+      setvalue(60);
+    }, 300);
+    setTimeout(() => {
+      setvalue(80);
+    }, 300);
+
+    document.addEventListener("DOMContentLoaded", loaded());
+    function loaded() {
+      setTimeout(() => {
+        setvalue(100);
+      }, 1050);
+      setTimeout(() => {
+        setLoading(false);
+      }, 1350);
+    }
+  }, []);
+  const [path1, setpath1] = useState("/")
+  const currentpath = (path)=>{
+    setpath1(path);
+  }
+  
+  
   return (
+    <>
+    {loading ? (
+      <Loader value={value} />) :
+    <div>
     <BrowserRouter>
-      <Navbar />
+      <div className={`${path1!==('/login' || '/signup')?'':'hidden'}`}><Navbar path ={currentpath} /></div>
       <Routes>
         <Route path="/" element={<div className="space-y-2">
-          <Hero />
+          <Hero path ={currentpath}  />
           <Landing1 />
           <Landing2 />
           <Landing3 />
@@ -31,14 +68,17 @@ function App() {
           <Landing5 />
         </div>}>
         </Route>
-        <Route exact path="/services" element={<Service />} />
-        <Route exact path="/doctor" element={<Doctor />} />
+        <Route exact path="/services" element={<Service  path ={currentpath} />} />
+        <Route exact path="/doctor" element={<Doctor path ={currentpath} />} />
         <Route exact path="/doctorsingle" element={<DoctorCard />} />
-        <Route exact path="/pharmacy" element={<Pharmacy />} />
-        <Route exact path="/diagnosis" element={<Diagnosis />} />
+        <Route exact path="/pharmacy" element={<Pharmacy path ={currentpath} />} />
+        <Route exact path="/diagnosis" element={<Diagnosis path ={currentpath} />} />
+        <Route exact path="/login" element={<Login path ={currentpath} />} />
       </Routes>
-      <Footer />
+      <div className={`${path1!==('/login' || '/signup')?'':'hidden'}`}><Footer /></div>
     </BrowserRouter>
+    </div>}
+    </>
   );
 }
 

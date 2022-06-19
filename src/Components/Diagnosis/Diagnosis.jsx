@@ -1,9 +1,15 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { useLocation } from 'react-router-dom';
 import { DietCard } from "./DietCard";
 import { ExcerciseDiet } from './ExcerciseDiet';
 
 
-export const Diagnosis = () => {
+export const Diagnosis = (props) => {
+    const { pathname } = useLocation();
+  useEffect(() => {
+    props.path(pathname)
+  }, [])
+  
     const [diet, setdiet] = useState("salads")
     const salads_food = [
         {
