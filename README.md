@@ -22,7 +22,7 @@ This project was bootstrapped with a technology Stack of React JS and Tailwind C
 
 The Demo of Application can be seen below
 
-
+The website is viewed best at `1200px X 1000px`
 
 https://user-images.githubusercontent.com/76606642/174476246-4e17777e-e04e-4453-9f92-643be3529b1f.mp4
 
