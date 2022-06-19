@@ -31,6 +31,7 @@ https://user-images.githubusercontent.com/76606642/174476246-4e17777e-e04e-4453-
 ## Future Work
 
 * Complete Integration of Server-Side and Client-Side of the application
+* Responsiveness to be added to the Web-Application
 * The Mobile-application Design is ready and the development process will get started right away.
 * An Integrated Database for both Web-Application and Mobile-Application
 
