@@ -1,8 +1,41 @@
-# Getting Started with Create React App
+# MyDoc (Healthcare Monitor (24x7))
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Regarding the Project
+
+
+<img src="https://user-images.githubusercontent.com/76606642/174475992-2215a338-34a0-49cf-82ba-f70bd38a5063.png" width="120" height="90" />
+
+The application is used for health-care monitoring which can be used by person of any age group.The application shows personalized content such as Recommended diet plan and Excercise Plan along with insights on recommended drugs and near-by pharmacies.
+
+
+
+
+
+The web-application ties-up with the best doctors across India which allows the user to register.This allows the user to maintain the medical history and can be accessed by any hospital the patient wishes to share the history.
+
+
+
+This project was bootstrapped with a technology Stack of React JS and Tailwind CSS framework.
+
+## Demo Video of Application
+
+The Demo of Application can be seen below
+
+
+
+https://user-images.githubusercontent.com/76606642/174476246-4e17777e-e04e-4453-9f92-643be3529b1f.mp4
+
+
+
+## Future Work
+
+* Complete Integration of Server-Side and Client-Side of the application
+* The Mobile-application Design is ready and the development process will get started right away.
+* An Integrated Database for both Web-Application and Mobile-Application
+
+
+## View the Web-Application
 
 In the project directory, you can run:
 
@@ -11,60 +44,6 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### `View the Deployed Version`
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Open [mydoc.on.fleek.co/](https://mydoc.on.fleek.co/) to view it in your browser.
